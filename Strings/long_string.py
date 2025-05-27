@@ -10,3 +10,4 @@ print (long_stirng)
 short = "nyoyoyoyoyoyoyoyoyo"
 print(short)
 
+
