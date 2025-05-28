@@ -1,0 +1,6 @@
+print(4/2)
+print(1+2.0)
+print(2*3.0)
+print(2.0**2)
+print("read the code")
+print("when an fraction,float is add,div,mul\nresult = float example 2.0*2 = 4.0")
