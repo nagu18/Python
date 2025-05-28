@@ -1,0 +1,15 @@
+name = "\tnagendarkonda\t"
+print(f"normal print={name}")
+print(f"using srtip={name.strip()}")
+name = name.lstrip()
+print(f"lstrip={name}")
+name= name.rstrip()
+print(f"rstrip={name}")
+print("..............................................................")
+name2 = "\nnagendarkonda\n"
+print(f"normal print={name2}")
+print(f"using srtip={name2.strip()}")
+name2 = name2.lstrip()
+print(f"lstrip={name2}")
+name2= name2.rstrip()
+print(f"rstrip={name2}")
