@@ -1,0 +1,2 @@
+vec= ["roylendfend","gt650","benz", "mustang", "panzer", "jet"]
+print (f"i love to drive {vec[1]}\ni crazzy to drive {vec[-1]}\nthe car i love {vec[2]}\nthe sports car i love {vec[-3]}\ndream to drive {vec[-1]}")
