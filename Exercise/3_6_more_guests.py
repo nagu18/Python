@@ -1,0 +1,26 @@
+#here i listed ppl who i invited and ppl who are not attending and the ppl i replaced.
+ppl_invite = []
+ppl_invite.append('sabitha')
+ppl_invite.append('vijaya')
+ppl_invite.append('shekar')
+ppl_invite.append('narasama')
+ppl_invite.append('venkat')
+ppl_invite.append('roja')
+ppl_invite.append('narasaya')
+print(f"old list :\n{ppl_invite}\n")
+#----------------------------------------------------------------------
+#inserting ,append code:
+ppl_invite.insert(0,'mouli')
+ppl_invite.insert(3,'vansh')
+ppl_invite.append('vikas')
+print(f"this the ppl how inserted\n{ppl_invite}\n")
+print('''msg's:-\n''')
+print(f"let have dinner tonight {ppl_invite[0].title()}")
+print(f"let have dinner tonight {ppl_invite[1].title()}")
+print(f"let have dinner tonight {ppl_invite[2].title()}")
+print(f"let have dinner tonight {ppl_invite[3].title()}")
+print(f"let have dinner tonight {ppl_invite[4].title()}")
+print(f"let have dinner tonight {ppl_invite[5].title()}")
+print(f"let have dinner tonight {ppl_invite[6].title()}")
+print(f"let have dinner tonight {ppl_invite[7].title()}")
+print(f"let have dinner tonight {ppl_invite[8].title()}")
