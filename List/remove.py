@@ -7,4 +7,7 @@ print(f"the car that i remove from the list is {the_car_removed}\nnow the new li
 # if want use the removed element use a variable as show in the code
 print("\nread the code ...")
 print('\n   there is a note in this code read it ok ')
+
+
+#note:-
 # if in the list the the element that u want to remove are many in the list u need to use loops
