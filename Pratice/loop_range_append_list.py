@@ -12,3 +12,10 @@ for value in range(1,11):
     cu = value **3
     cube.append(cu)
 print(f"\n{cube}")
+
+# short form of append 
+#4 squre
+qudra = []
+for qu in range(1,11):
+    qudra.append(qu**4)
+print(f"\n{qudra}") 
