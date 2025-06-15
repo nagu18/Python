@@ -4,5 +4,8 @@ list.sort()
 print(f'{list}\n')
 list.sort(reverse=True)
 print(f'{list}\n')
-print(sorted(list))
+print(sorted(list)) # tem sort it well not change it perminent 
+
+
+
 
