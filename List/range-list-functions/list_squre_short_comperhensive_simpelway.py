@@ -14,3 +14,4 @@ qurd = []
 for qv in range(1,11):
     qurd.append(qv**4)
 print(f"\nthis is qurd:  {qurd}")
+
