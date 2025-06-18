@@ -8,3 +8,4 @@ while True:
          print('u guss to high')
     elif i < 10:
          print('u are close')
+

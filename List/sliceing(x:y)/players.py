@@ -5,3 +5,4 @@ print(players[2:])
 print(players[:-3])
 print(players[-3:])
 print(players[0::2])
+
