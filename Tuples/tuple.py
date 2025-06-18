@@ -9,4 +9,5 @@ print(new)
 
 #the
 range_tuples=tuple((value**2 for value in range(1,10)))
+
 print(range_tuples)

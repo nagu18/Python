@@ -1,4 +1,4 @@
-#way to add list :- 
+#way to add list's :- 
 
 #type 1:
 list1 = [1,2,3]

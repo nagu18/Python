@@ -8,3 +8,4 @@ while True:
 
 print("Final List:", items)
 
+
