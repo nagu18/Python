@@ -5,3 +5,6 @@ elif alien == 'yellow':
     print('10 points')
 elif alien == 'red':
     print('15 points')
+    
+
+
