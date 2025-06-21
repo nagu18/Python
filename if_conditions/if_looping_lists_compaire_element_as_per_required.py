@@ -6,3 +6,5 @@ for req in request:
         print(f"adding {req}")
     else:
         print(f"not avalable {req}")
+# toopings can be a tuples 
+# by using in to do list work like compare elemets etc...
