@@ -19,4 +19,4 @@ my_python_knowlage={'lstrip':'remove left side whitespace',
                     'reverse.()':'to sort in reverse'
                     }
 for values in my_python_knowlage:
-    print(f'{values} : {my_python_knowlage[values]}')
+    print(f'\n{values} : {my_python_knowlage[values]}')
