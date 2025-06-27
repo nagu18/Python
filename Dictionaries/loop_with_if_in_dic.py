@@ -6,5 +6,8 @@ favorite_languages = {
     }
 cheker =['jen','edward']
 for name in favorite_languages.keys():
+    print(name)
+
+    
     if name in cheker:
         print(f"{name} i see u love {favorite_languages[name]}")
