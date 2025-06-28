@@ -18,5 +18,7 @@ my_python_knowlage={'lstrip':'remove left side whitespace',
                     'print(listname.sorted())':'for tem sort',
                     'reverse.()':'to sort in reverse'
                     }
+# looping with key and value 
+
 for key,value in my_python_knowlage.items():
     print({f'{key}:{value}'})

@@ -6,3 +6,4 @@ favorite_languages = {
     }
 for values in set(favorite_languages.values()): #set as we know the are no dublicate values
     print(values)
+    
