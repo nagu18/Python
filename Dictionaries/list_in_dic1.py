@@ -8,3 +8,4 @@ for key,value in fav_lag.items():
     print(f"{key.title()}:______________________________")
     for v in value:
         print(f"\tthe fav lag: {v}")
+#using the iner loops for list in dic printing the values list used iner loop 
