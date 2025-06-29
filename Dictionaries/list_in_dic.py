@@ -6,4 +6,4 @@ print(pizza['crust'])
 #loop the list in dictionarie:-
 
 for items in pizza['toppings']:
-    print(p)
+    print(items)
