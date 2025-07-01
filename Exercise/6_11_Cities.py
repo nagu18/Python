@@ -10,7 +10,6 @@ cities ={
         'beguluru':'#1',
     }
 }
-
 for key , value in cities.items():
     print(".......................................................................")
     print(f"state:- {key}")
