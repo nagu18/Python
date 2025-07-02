@@ -9,4 +9,3 @@ for name in names_list[:3]:
         name['name']='konda'
         name['age']='22'
 print(names_list)
-        
