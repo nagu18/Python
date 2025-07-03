@@ -1,1 +1,1 @@
-    print(vlaues_food)
+!=
