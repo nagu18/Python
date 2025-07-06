@@ -30,7 +30,10 @@ while (value.lower() != 'quit'): #using of condtion
             elif (x>12):
                 print('ticket is 15$')
 '''
+
+
 #flage variable:- 
+'''
 v = True
 x=""
 while v:
@@ -46,9 +49,7 @@ while v:
         elif (x>12):
             print('ticket is 15$')
     
-
-
-
+'''
     
 
     
