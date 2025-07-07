@@ -2,17 +2,198 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>register herre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .form-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .form-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        .form-content {
+            padding: 30px;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+        }
+        
+        .input-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #4a5568;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .input-field:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+            outline: none;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            color: #718096;
+        }
+        
+        .login-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .success-message {
+            background-color: #e6fffa;
+            color: #38b2ac;
+        }
+        
+        .error-message {
+            background-color: #fff5f5;
+            color: #e53e3e;
+        }
+    </style>
 </head>
 <body>
-<h1>register now</h1>
-<form method="post">
-    username: <input type="text" name="username" required><br>
-    gmail: <input type="email" name="email" required><br>
-    password: <input type="password" name="password" required><br>
-    <input type="submit" value="register">
-    <p>{{ message }}</p>
-    <a href="/login">Login</a>
-</form>
+    <div class="form-container">
+        <div class="form-header">
+            <h1 class="text-2xl font-bold">Join Our Community</h1>
+            <p class="mt-2">Create your account in seconds</p>
+        </div>
+        
+        <div class="form-content">
+            <form method="post">
+                <div class="input-group">
+                    <label class="input-label" for="username">Username</label>
+                    <input type="text" id="username" name="username" class="input-field" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label" for="email">Email</label>
+                    <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label" for="password">Password</label>
+                    <input type="password" id="password" name="password" class="input-field" placeholder="Create a password" required>
+                </div>
+                
+                <button type="submit" class="submit-btn">Register Now</button>
+                
+            </form>
+            
+            <div class="login-link">
+                Already have an account? <a href="/login">Login here</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Input validation real-time feedback
+            const inputs = document.querySelectorAll('.input-field');
+            
+            inputs.forEach(input => {
+                input.addEventListener('input', function() {
+                    if (this.checkValidity()) {
+                        this.style.borderColor = '#48bb78'; // green
+                    } else {
+                        this.style.borderColor = '#e2e8f0';
+                    }
+                });
+                
+                input.addEventListener('focus', function() {
+                    this.style.borderColor = '#667eea';
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.style.borderColor = '#e2e8f0';
+                });
+            });
+            
+            // Password strength indicator (could be enhanced further)
+            const passwordInput = document.getElementById('password');
+            passwordInput.addEventListener('input', function() {
+                const strengthWarning = document.getElementById('strength-warning');
+                if (this.value.length > 0 && this.value.length < 6) {
+                    if (!strengthWarning) {
+                        const warning = document.createElement('div');
+                        warning.id = 'strength-warning';
+                        warning.style.color = '#e53e3e';
+                        warning.style.fontSize = '14px';
+                        warning.textContent = 'Weak password (min 6 characters)';
+                        this.parentNode.appendChild(warning);
+                    }
+                } else if (strengthWarning) {
+                    strengthWarning.remove();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+

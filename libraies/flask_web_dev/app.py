@@ -27,5 +27,21 @@ def register():
     # Handle GET request
     return render_template("register.html")
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        username = request.form.get("username")
+        password = request.form.get("password")
+
+        db = get_db()
+        cursor = db.cursor()
+        cursor.execute("SELECT * FROM users WHERE username=%s AND password=%s", (username, password))
+        user = cursor.fetchone()
+        if user:
+            return "Login successful!"
+        else:
+            return "Invalid credentials!"
+    return render_template("login.html")
+
 if __name__=="__main__":
     app.run(debug=True)
