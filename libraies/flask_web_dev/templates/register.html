@@ -6,11 +6,13 @@
 </head>
 <body>
 <h1>register now</h1>
-<form>
+<form method="post">
     username: <input type="text" name="username" required><br>
     gmail: <input type="email" name="email" required><br>
     password: <input type="password" name="password" required><br>
     <input type="submit" value="register">
+    <p>{{ message }}</p>
+    <a href="/login">Login</a>
 </form>
 </body>
 </html>
