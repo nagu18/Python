@@ -11,7 +11,7 @@
 - *****: Multiplication  
   _Example_: `a * b`
 
-- **/**: Division  
+- **/**: Division   
   _Example_: `a / b`
 
 - **%**: Modulus  
