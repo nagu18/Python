@@ -6,7 +6,7 @@ print(list)
 list=[x for x in range(1,11)]
 print(list)
 
-
+'''
 arr=[]
 def even(x):
     arr.append(x)
@@ -19,3 +19,4 @@ while flag:
     else:
         print(arr)
         flag=False
+'''
